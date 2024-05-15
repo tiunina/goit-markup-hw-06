@@ -2,6 +2,7 @@ body{
   font-family: 'Roboto', sans-serif;
   color: #434455;
   background-color: #FFF;
+  overflow-x: hidden;
 }
 a{
   text-decoration: none;
@@ -275,7 +276,8 @@ display:none;
     display: flex;
     flex-direction: column;
     gap: 12px;
-    padding: 24px 0;
+    align-items: center;
+    justify-content: center;
   }
   .address-link {
     font-size: 12px;
@@ -343,9 +345,9 @@ display:none;
 .section-hero{
   background: #2e2f42;
   background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),  url(../images/hero-image-mobile-1x.jpg);
-  max-width: 320px;
+  max-width: 1440px;
   padding: 72px 0;
-  
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center; 
   margin: auto;
@@ -403,15 +405,16 @@ display:none;
     margin-bottom: 48px;
   }
   .section-hero{
-    background-size: cover;
-    max-width: 768px;
+    padding: 112px 0;
+    
+    
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-image-tablet-1x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi){
   .section-hero{
-    
+    padding: 188px 0;
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-image-mobile-2x.jpg);
   }
 }
@@ -497,13 +500,13 @@ display:none;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 8px;
   }
   .strengths-list{
     gap: 24px;
   }
   .list-item-our-strengths{
     width: calc((100% - 72px) / 4);
+    gap: 8px;
   }
   .svg-use-strengths{
     display: flex;
@@ -514,11 +517,13 @@ display:none;
     border: 1px solid #8e8f99;
     border-radius: 4px;
     background: #f4f4fd;
-    margin-bottom: 8px;
     width: 264px;
     height: 112px;
    }
+   .section-strengths-p{
+    font-weight: 400;
 } 
+}
   
 /* ======= OUR TEAM =========== */
 .section-our-team{
@@ -913,11 +918,16 @@ display:none;
  .label-subscribe-p{
   text-align: left;
  }
+ .container-footer{
+  align-items: flex-start;
+  max-width: 584px;
+ }
 }
 @media screen and (min-width: 1158px) {
  .container-footer{
   flex-direction: row;
   align-items: baseline;
+  max-width: 1158px;
  }
  .footer-div{
   margin-right: 120px;
