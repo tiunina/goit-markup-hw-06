@@ -24,7 +24,10 @@ img{
 }
 .section{
   padding: 120px 0;
-  min-width: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* min-width: 100vh; */
 }
 .visually-hidden {
   position: absolute;
@@ -64,7 +67,7 @@ img{
   } */
 /* ==== HEADER ====*/
 .header-section{
-  min-width: 100vh;
+  /* min-width: 100vh; */
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   
@@ -354,12 +357,12 @@ display:none;
   overflow-y: auto;
 }
 .section-hero-title{
+  max-width: 216px;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
@@ -398,6 +401,10 @@ display:none;
 
 @media screen and (min-width: 768px) {
   .section-hero-title{
+    max-width: 4966px;
+  }
+  .se
+  .section-hero-title{
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;    
@@ -414,15 +421,16 @@ display:none;
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi){
   .section-hero{
-    padding: 188px 0;
+    
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-image-mobile-2x.jpg);
   }
 }
 
 
 @media screen and (min-width: 1158px) {
-  .section-hero{
+ ction-hero{
     max-width: 1440px;
+    padding: 188px 0;
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-image.jpg);
   }
 } 
@@ -489,7 +497,7 @@ display:none;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 24px;
+    gap: 8px;
     width: calc((100% - 24px) / 2);
   }
 }
@@ -571,7 +579,7 @@ display:none;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  margin:8px;
+  margin-bottom:8px;
 }
 .social-media-list{
   display: flex;
@@ -727,7 +735,7 @@ display:none;
   .footer {
     background-color: #2e2f42;
     padding: 100px 0;
-    min-width: 100vh;
+    /* min-width: 100vh; */
   }
   
   .container-footer {
@@ -921,6 +929,7 @@ display:none;
  .container-footer{
   align-items: flex-start;
   max-width: 584px;
+  padding: 0 16px;
  }
 }
 @media screen and (min-width: 1158px) {
