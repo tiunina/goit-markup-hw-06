@@ -45,6 +45,7 @@ img{
 .container { 
   max-width: 320px;
   margin: 0 auto;
+  padding: 0 16px;
   }
   @media screen and (min-width: 768px) {
     .container{
@@ -70,7 +71,8 @@ img{
   /* min-width: 100vh; */
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-  
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .header-list{
 display:none;
@@ -104,8 +106,7 @@ display:none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    
    
   }
   .burger-btn{
@@ -184,6 +185,7 @@ display:none;
   gap: 40px;
   margin-bottom: 168px;
 }
+
 .nav-link-mobile{
   font-weight: 700;
   font-size: 36px;
@@ -210,6 +212,7 @@ display:none;
   gap: 24px;
 }
 .address-link {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -220,7 +223,12 @@ display:none;
 .address-link:focus{
   color: #404bbf;
 }
-
+.studio-li-mobile{
+  color: #404bbf;
+}
+.phone-number{
+  color: #4d5ae5;
+}
 
 .social-media-list-mobile{
   display: flex;
@@ -401,7 +409,10 @@ display:none;
 
 @media screen and (min-width: 768px) {
   .section-hero-title{
-    max-width: 4966px;
+    font-size: 56px;
+    font-weight: 700;
+    max-width: 496px;
+    height: 120px;
   }
   .se
   .section-hero-title{
@@ -422,13 +433,13 @@ display:none;
 @media screen and (min-width: 768px) and (min-resolution: 192dpi){
   .section-hero{
     
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-image-mobile-2x.jpg);
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-image-tablet-2x.jpg);
   }
 }
 
 
 @media screen and (min-width: 1158px) {
- ction-hero{
+ .section-hero{
     max-width: 1440px;
     padding: 188px 0;
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-image.jpg);
@@ -453,6 +464,8 @@ display:none;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-left: auto;
+  margin-right: auto;
 }
 .section-strengths-p{
   font-weight: 500;
