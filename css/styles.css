@@ -68,11 +68,9 @@ img{
   } */
 /* ==== HEADER ====*/
 .header-section{
-  /* min-width: 100vh; */
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-  padding-top: 16px;
-  padding-bottom: 16px;
+  
 }
 .header-list{
 display:none;
@@ -102,12 +100,14 @@ display:none;
 
 @media screen and (max-width: 767px) {
   /* HEADER */
+  .header-section{
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   .header-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
-   
+    align-items: center;   
   }
   .burger-btn{
     border: none;
@@ -120,6 +120,7 @@ display:none;
   .burger-btn:focus{
   background-color: #404bbf;
   }
+
   
 
   /* =======FORM MOBILE========= */
@@ -464,8 +465,7 @@ display:none;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-left: auto;
-  margin-right: auto;
+ 
 }
 .section-strengths-p{
   font-weight: 500;
@@ -477,13 +477,16 @@ display:none;
 
 
 @media screen and (max-width: 767px){
+  .section-strengths-title{
+    margin-left: auto;
+    margin-right: auto;
+  }
   .strengths-list{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     gap: 72px;
-  
     max-width: 288px;
   }
   .list-item-our-strengths{
